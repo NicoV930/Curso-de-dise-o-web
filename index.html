@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Diseño Web</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ============ Intro de carga (tipo terminal) ============ -->
+    <div id="introLoader" class="intro-loader" role="presentation" aria-hidden="true">
+        <div class="intro-window">
+            <div class="intro-dots"><span></span><span></span><span></span></div>
+            <pre class="intro-code"><code id="introCode"></code><span class="intro-cursor">&nbsp;</span></pre>
+        </div>
+        <div class="intro-logo" id="introLogo">Diseño<span>Web</span></div>
+    </div>
+
+    <!-- ============ Navbar ============ -->
+    <nav class="navbar navbar-expand-lg site-navbar fixed-top">
+        <div class="container">
+            <a class="navbar-brand logo" href="#top">Diseño<span>Web</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4 text-center">
+                    <li class="nav-item"><a class="nav-link" href="#about">El curso</a></li>
+                    <li class="nav-item"><a class="nav-link" href="programa.html">Programa completo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#teachers">Maestros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews">Reseñas</a></li>
+                    <li class="nav-item mt-2 mt-lg-0"><a class="btn btn-brand rounded-pill px-4" href="#register">Inscribirse</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============ Hero ============ -->
+    <header id="top" class="hero">
+        <div class="hero-shapes" aria-hidden="true">
+            <div class="shape shape-blob"></div>
+            <div class="shape shape-circle"></div>
+            <div class="shape shape-square"></div>
+        </div>
+        <div class="container position-relative">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-xl-7">
+                    <span class="badge badge-yellow">100% en línea</span>
+                    <h1>Diseña sitios web que la gente <span class="highlight">recuerda</span></h1>
+                    <p class="hero-text">De la teoría a tu primer proyecto real. Aprende HTML, CSS y diseño UX/UI con maestros que te acompañan en cada paso.</p>
+                    <a href="#register" class="btn btn-accent btn-lg rounded-pill">Quiero inscribirme</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============ Sobre el curso ============ -->
+    <section id="about" class="py-5 py-lg-6">
+        <div class="container">
+            <span class="eyebrow">Sobre el curso</span>
+            <h2>Todo lo que necesitas para empezar</h2>
+            <p class="lead-text">Aprende los conceptos básicos del diseño web, desde la teoría hasta la práctica. Ofrecemos un curso único que cubre:</p>
+            <div class="row g-3 mt-2">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="feature-card"><span class="feature-icon">🧱</span>Conceptos básicos de HTML y CSS</div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="feature-card"><span class="feature-icon">🎨</span>Principios de diseño</div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="feature-card"><span class="feature-icon">🖌️</span>Trabajar con editores gráficos</div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="feature-card"><span class="feature-icon">📱</span>Creación de sitios web responsivos</div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="feature-card"><span class="feature-icon">🚀</span>Proyectos y tareas prácticas</div>
+                </div>
+            </div>
+            <a href="programa.html" class="link-programa mt-3 d-inline-block">Ver el programa completo, módulo por módulo &rarr;</a>
+        </div>
+    </section>
+
+    <!-- ============ Maestros ============ -->
+    <section id="teachers" class="py-5 py-lg-6 section-alt">
+        <div class="container">
+            <span class="eyebrow">Maestros</span>
+            <h2>Aprende con quienes lo hacen todos los días</h2>
+            <p class="lead-text">Nuestros profesores experimentados te ayudarán a dominar el diseño web:</p>
+            <div class="row g-4 mt-2">
+                <div class="col-12 col-md-6">
+                    <div class="teacher-card h-100">
+                        <div class="teacher-avatar avatar-purple">AI</div>
+                        <h3>Anna Ivánova</h3>
+                        <p>Diseñadora web profesional con 10 años de experiencia. Se especializa en la creación de interfaces adaptativas.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="teacher-card h-100">
+                        <div class="teacher-avatar avatar-coral">IP</div>
+                        <h3>Ígor Petrov</h3>
+                        <p>Experto en diseño UX/UI, imparte clases magistrales y cursos sobre mejora de la experiencia de usuario.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ Reseñas ============ -->
+    <section id="reviews" class="py-5 py-lg-6">
+        <div class="container">
+            <span class="eyebrow">Reseñas</span>
+            <h2>Lo que dicen nuestros estudiantes</h2>
+            <div class="row g-4 mt-2">
+                <div class="col-12 col-md-6">
+                    <blockquote class="review-card h-100">
+                        <p>"¡Este es el mejor curso de diseño web! Aprendí a crear mis propios sitios web."</p>
+                        <footer>— María, 16 años</footer>
+                    </blockquote>
+                </div>
+                <div class="col-12 col-md-6">
+                    <blockquote class="review-card review-card-alt h-100">
+                        <p>"¡Excelentes profesores y mucha práctica!"</p>
+                        <footer>— Alexey, 14 años</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ Registro ============ -->
+    <section id="register" class="register text-center">
+        <div class="container">
+            <span class="badge badge-mint">Cupos limitados</span>
+            <h2>Inscríbete en el curso</h2>
+            <p class="mx-auto">¡No pierdas la oportunidad de dominar el diseño web! Completa el formulario para registrarte.</p>
+            <a href="https://www.kodland.org/es/courses/coding/web-design" class="btn btn-accent btn-lg rounded-pill px-5">Registro</a>
+        </div>
+    </section>
+
+    <!-- ============ Footer ============ -->
+    <footer class="site-footer text-center">
+        <div class="container">
+            <p class="mb-0">Información de contacto: <a href="/cdn-cgi/l/email-protection#87e4e8e9f3e6e4f3e8c7e4f2f5f4e8e3e2e3eef4e2e9e8f0e2e5a9e4e8ea"><span class="__cf_email__" data-cfemail="6e0d01001a0f0d1a012e0d1b1c1d010a0b0a071d0b0001190b0c400d0103">[email&#160;protected]</span></a></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap bundle (incluye Popper, necesario para el navbar colapsable) -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ============ Intro de carga: efecto de tecleo ============ -->
+    <script>
+        (function () {
+            var loader = document.getElementById('introLoader');
+            var codeEl = document.getElementById('introCode');
+            var logoEl = document.getElementById('introLogo');
+            if (!loader || !codeEl) return;
+
+            var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            function hideLoader() {
+                loader.classList.add('intro-hide');
+                document.documentElement.classList.remove('intro-lock');
+                loader.addEventListener('transitionend', function () {
+                    loader.style.display = 'none';
+                }, { once: true });
+            }
+
+            if (reduceMotion) {
+                hideLoader();
+                return;
+            }
+
+            document.documentElement.classList.add('intro-lock');
+
+            var lines = [
+                '<html>',
+                '  <body>',
+                '    <h1>¡Bienvenido!</h1>',
+                '  </body>',
+                '</html>'
+            ];
+            var fullText = lines.join('\n');
+            var i = 0;
+            var typingSpeed = 32;
+
+            function typeChar() {
+                if (i <= fullText.length) {
+                    codeEl.textContent = fullText.slice(0, i);
+                    i++;
+                    setTimeout(typeChar, typingSpeed);
+                } else {
+                    logoEl.classList.add('intro-logo-show');
+                    setTimeout(hideLoader, 900);
+                }
+            }
+
+            setTimeout(typeChar, 300);
+
+            // Permite saltar la intro con un clic o una tecla, por si alguien no quiere esperar
+            loader.addEventListener('click', hideLoader);
+            window.addEventListener('keydown', hideLoader, { once: true });
+        })();
+    </script>
+</body>
+</html>
